@@ -180,5 +180,6 @@ st.title("InterviewBot - AI Interview Chatbot")
 # Use Railway's dynamic port from the environment variable
 port = int(os.environ.get('PORT', 8501))
 st.set_option('server.port', port)
+st.set_option('server.address', '0.0.0.0')
 
 create_bot()
